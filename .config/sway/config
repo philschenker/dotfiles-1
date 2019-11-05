@@ -213,9 +213,9 @@ bindsym $mod+r mode "resize"
 #
     # Volume setting.
     bindsym XF86AudioMute exec pamixer -t
-    bindsym XF86AudioLowerVolume exec pamixer -d 5
+    bindsym XF86AudioLowerVolume exec pamixer -d 1
     bindsym Shift+XF86AudioLowerVolume exec pamixer -d 1
-    bindsym XF86AudioRaiseVolume exec pamixer -i 5
+    bindsym XF86AudioRaiseVolume exec pamixer -i 1
     bindsym Shift+XF86AudioRaiseVolume exec pamixer -i 1
 
     # Playback setting.
