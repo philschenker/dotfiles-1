@@ -230,7 +230,7 @@ bindsym $mod+r mode "resize"
     bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
 
     # Screenshots
-    bindsym Print exec grim \"$HOME/Pictures/Screenshot_$(date +%Y%m%d)_$(date +%H%M%S).png"
+    bindsym Print exec grim \"$HOME/Pictures/Screenshot from $(date +%Y-%m-%d) $(date +%H-%M-%S).png"
 
     # Part screenshot
     bindsym Ctrl+Print exec slurp | grim -g - \"$HOME/Pictures/Screenshot_$(date +%Y%m%d)_$(date +%H%M%S).png"
