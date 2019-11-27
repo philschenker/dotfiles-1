@@ -9,7 +9,11 @@
  smart_borders on
  smart_gaps on
  gaps inner 6
- #gaps top 3
+ gaps outer 0
+
+bindsym $mod+Shift+x		gaps inner current set 6, gaps outer current set 0
+bindsym $mod+y			gaps inner current plus 3
+bindsym $mod+Shift+y		gaps inner current minus 3
 
  # set gnome
 
