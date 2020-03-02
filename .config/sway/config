@@ -37,8 +37,8 @@
 #
 #
     exec_always swayidle -w \
-            timeout 300 'exec $locking' \
-            timeout 600 'swaymsg "output * dpms off"' \
+            timeout 600 'exec $locking' \
+            timeout 900 'swaymsg "output * dpms off"' \
             resume 'swaymsg "output * dpms on"' \
             before-sleep 'exec $locking'
 
@@ -146,6 +146,12 @@
     bindsym $mod+Shift+0 move container to workspace $workspace10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
+
+    assign [class="(?i)spotify"] → $workspace10
+    assign [instance="spotify"] → $workspace10
+    assign [app_id="(?i)evolution"] → $workspace9
+    assign [class="(?i)slack"] → $workspace9
+
 #
 # Layout stuff:
 #
